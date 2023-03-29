@@ -137,18 +137,6 @@ NOTE: By default, the tests will run in headless mode.  If you want to run inter
  5. WaitForExist - [here](https://webdriver.io/docs/api/element/waitForExist)
  6. WaitUntil - [here](https://webdriver.io/docs/api/element/waitUntil)
 
-
-## Run tests using CLI for a specific browser
-Consult the Services section [here](https://webdriver.io/docs/gettingstarted)
- | [Standalone service](https://webdriver.io/docs/selenium-standalone-service)
-
-By default, this framework is wired to support the following browser tests:
- - Chrome
- - Firefox
- - Edge
-
- NOTE: By default, the tests will run in headless mode.  If you want to run interactively, comment out chromeoptions section in config file as outlined [here](https://webdriver.io/docs/configurationfile/)
-
 ## Run tests using CLI using a different environment
 Cross ENV is the package library that is being used to run test across multiple environments [here](https://www.npmjs.com/package/cross-env). By default the following JSON environment configurations are included:
 1. LOCAL
@@ -160,6 +148,23 @@ You can point to a specific baseUrl based on the configurations you pass above. 
 _npx cross-env ENV=QA npm run test_
 
 NOTE: By default, the tests will run in headless mode.  If you want to run interactively, comment out chromeoptions section in config file as outlined [here](https://webdriver.io/docs/configurationfile/)
+
+## Run tests using CLI for a specific browser
+Consult the Services section [here](https://webdriver.io/docs/gettingstarted)
+ | [Standalone service](https://webdriver.io/docs/selenium-standalone-service)
+
+By default, this framework is wired to support the following browser tests:
+ - Chrome
+ - Firefox
+ - Edge
+
+ NOTE: By default, the tests will run in headless mode.  If you want to run interactively on chrome for example, comment out chromeoptions section in config file as outlined [here](https://webdriver.io/docs/configurationfile/).
+
+ To run tests against a specific browser:
+
+ _npx cross-env ENV=QA npm run test:firefox_
+ _npx cross-env ENV=QA npm run test:edge_
+ _npx cross-env ENV=QA npm run test:allbrowsers_
 
 ## Running Suites
 You can run suites of tests. Consult documentation [here](https://webdriver.io/docs/organizingsuites/)

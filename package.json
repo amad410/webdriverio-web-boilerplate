@@ -17,6 +17,9 @@
   "scripts": {
     "wdio": "wdio run ./wdio.conf.ts",
     "test": "wdio run ./wdio.conf.ts",
+    "test:edge": "wdio run ./wdio.conf.edge.ts",
+    "test:firefox": "wdio run ./wdio.conf.firefox.ts",
+    "test:allbrowsers": "wdio run ./wdio.conf.all.ts",
     "report": "allure generate allure-results --clean && allure open"
   },
   "dependencies": {
