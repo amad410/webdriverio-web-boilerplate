@@ -161,6 +161,9 @@ _npx cross-env ENV=QA npm run test_
 
 NOTE: By default, the tests will run in headless mode.  If you want to run interactively, comment out chromeoptions section in config file as outlined [here](https://webdriver.io/docs/configurationfile/)
 
+## Running Suites
+You can run suites of tests. Consult documentation [here](https://webdriver.io/docs/organizingsuites/)
+
 # Configurations
 See documentation [here](https://webdriver.io/docs/watcher/#:~:text=With%20the%20WDIO%20testrunner%20you,it%20ran%20all%20tests%2C%20e.g.)
 
